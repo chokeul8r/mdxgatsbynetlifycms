@@ -1,6 +1,5 @@
 ---
 templateKey: home-page
-featuredImage: 
 title: Home Page
 featuredImage:
 headline: Headline
