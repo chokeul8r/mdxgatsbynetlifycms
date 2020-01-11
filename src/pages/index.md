@@ -2,7 +2,6 @@
 templateKey: home-page
 featuredImage: 
 title: Home Page
-templateKey: "home-page"
 featuredImage:
 headline: Headline
 subHeadline: Sub-Headline
