@@ -2,13 +2,14 @@ import React from "react"
 
 import { Heading, SEO } from "../components"
 import { RenderMarkdown } from "../core"
+import Layout from "../app-layout.component"
 import {
   safelyGetFrontMatter,
   withFallback,
 } from "../cms"
 
 export const HomePageTemplate = ({ title, sections }) => (
-  <article>
+  <Layout>
     <SEO title={title} />
     <Heading tag={1}>{title}</Heading>
     {withFallback(sections, []).map((section, i) => {
@@ -22,7 +23,7 @@ export const HomePageTemplate = ({ title, sections }) => (
         </section>
       )
     })}
-  </article>
+  </Layout>
 )
 
 const HomePage = ({ pageContext }) => {

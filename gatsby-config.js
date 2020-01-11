@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby-MDX + Netlify-CMS Starter`,
     description: `Starter for Gatsby-MDX + Netlify CMS`,
-    author: `@renvrant`,
+    author: `Mark Long`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -23,7 +23,8 @@ module.exports = {
           // This entry template will switch the page template based on
           // a frontmatter value provided in the CMS, allowing users to
           // choose different template layouts.
-          default: require.resolve(`./src/page-templates/cms-entry.template.js`)
+          default: require.resolve(`./src/page-templates/home-page.template.js`),
+          page: require.resolve(`./src/page-templates/thank-you-page.template.js`),
         },
       }
     },

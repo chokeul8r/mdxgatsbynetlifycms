@@ -1,6 +1,5 @@
 backend:
   name: git-gateway
-  repo: renvrant/gatsby-mdx-netlify-cms-starter
   branch: master
 
 media_folder: uploads/img
@@ -8,7 +7,7 @@ public_folder: /img
 
 collections:
   - name: "mainPages"
-    label: "Main Pages and Settings"
+    label: "Pages & Settings"
     files:
       - file: "src/pages/index.md"
         label: "Home"
@@ -19,6 +18,27 @@ collections:
               name: "templateKey",
               widget: "hidden",
               default: "home-page",
+            }
+          - { label: Title, name: title, widget: "string" }
+          - {
+              label: Sections,
+              name: sections,
+              widget: list,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Body, name: body, widget: markdown },
+                ],
+            }
+      - file: "src/pages/thank-you.md"
+        label: "Thank You"
+        name: "thank-you"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "thank-you-page",
             }
           - { label: Title, name: title, widget: "string" }
           - {
@@ -43,21 +63,3 @@ collections:
             }
           - { label: Site Title, name: title, widget: "string" }
           - { label: Site Description, name: desc, widget: "string" }
-          - {
-              label: Menu,
-              name: menu_nav,
-              widget: list,
-              fields:
-                [
-                  { label: Text, name: text, widget: string },
-                  { label: URL, name: url, widget: string },
-                ],
-            }
-  - name: "content"
-    label: "Content Pages"
-    folder: "src/pages/content"
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown" }
