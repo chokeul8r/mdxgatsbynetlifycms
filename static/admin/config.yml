@@ -10,7 +10,7 @@ collections:
     label: "Pages & Settings"
     files:
       - file: "src/pages/index.md"
-        label: "Home"
+        label: "Landing Page"
         name: "home"
         fields:
           - {
@@ -31,7 +31,7 @@ collections:
                 ],
             }
       - file: "src/pages/thank-you.md"
-        label: "Thank You"
+        label: "Thank You Page"
         name: "thank-you"
         fields:
           - {
