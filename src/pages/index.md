@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
 featuredImage: /img/74627095_10157084580318705_2431439440770498560_n.jpg
-title: Home Page
+title: Landing Page
 headline: Headline
 subHeadline: Sub-Headline
 introduction: Introduction
