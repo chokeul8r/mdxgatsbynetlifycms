@@ -4,9 +4,10 @@ backend:
 
 media_folder: uploads/img
 public_folder: /img
+publish_mode: editorial_workflow
 
 collections:
-  - name: "mainPages"
+  - name: "Pages"
     label: "Pages & Settings"
     files:
       - file: "src/pages/index.md"
