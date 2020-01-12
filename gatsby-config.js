@@ -13,20 +13,31 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `uploads`,
+        path: `${__dirname}/uploads/img`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: ['.mdx', '.md'],
+        extensions: [".mdx", ".md"],
         defaultLayouts: {
           // This entry template will switch the page template based on
           // a frontmatter value provided in the CMS, allowing users to
           // choose different template layouts.
-          default: require.resolve(`./src/page-templates/home-page.template.js`),
-          page: require.resolve(`./src/page-templates/thank-you-page.template.js`),
+          default: require.resolve(
+            `./src/page-templates/home-page.template.js`
+          ),
+          page: require.resolve(
+            `./src/page-templates/thank-you-page.template.js`
+          ),
         },
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
