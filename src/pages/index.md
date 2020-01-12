@@ -16,10 +16,6 @@ sections:
       tempus Brooklyn ultricies elementum eros laserdisc commodo ornare metus
       viral. Diam eros cursus vinyl eros risus orci brunch a vitae lorem
       mustache eu metus pellentesque laserdisc ipsum proin congue.
-
-
-      <CallToAction url="http://google.com" align="center" bgColor="crimson">New
-      CTA</CallToAction>
     title: New Section
 ---
 
