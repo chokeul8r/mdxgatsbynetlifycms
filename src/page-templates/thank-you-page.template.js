@@ -8,6 +8,7 @@ export const ThankYouPageTemplate = ({
   title,
   headline,
   profileImage,
+  sections,
 }) => (
   <>
     <SEO title={title} />
