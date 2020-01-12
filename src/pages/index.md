@@ -6,7 +6,12 @@ headline: Headline
 subHeadline: Sub-Headline
 profileImage: /img/ryan1.jpg
 sections:
-  - body: Section Text
+  - body: >-
+      Section Text
+
+
+      <CallToAction url="https://google.com" align="center"
+      bgColor="rebeccapurple">Holy Crap This Works!</CallToAction>
     title: Section Title
 ---
 
