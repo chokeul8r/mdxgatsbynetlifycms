@@ -34,7 +34,7 @@ collections:
               widget: list,
               fields:
                 [
-                { label: Title, name: title, widget: string },
+                # { label: Title, name: title, widget: string },
                 { label: Body, name: body, widget: markdown },
                 ]
             }
@@ -53,8 +53,18 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - { label: Headline, name: headline, widget: string }
-          - { label: Outtro, name: body, widget: markdown }
           - { label: Profile Image, name: profileImage, widget: image }
+          - {
+              label: Sections,
+              name: sections,
+              widget: list,
+              fields:
+                [
+                # { label: Title, name: title, widget: string },
+                { label: Body, name: body, widget: markdown },
+                ]
+            }
+          # - { label: Outtro, name: body, widget: markdown }
       - file: "src/pages/config.md"
         label: "Global Settings"
         name: "config"

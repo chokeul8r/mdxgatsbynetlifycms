@@ -24,13 +24,10 @@ export const HomePageTemplate = ({
       {withFallback(sections, []).map((section, i) => {
         return (
           <section key={i}>
-            <h2>{section.title}</h2>
             <RenderMarkdown md={section.body} />
-            <hr />
           </section>
         )
       })}
-
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <img src={profileImage} alt="Ryan" />
       </div>
