@@ -18,8 +18,6 @@ sections:
       mustache eu metus pellentesque laserdisc ipsum proin congue.
 
 
-
-
       <CallToAction url="http://google.com" align="center" bgColor="crimson">New
       CTA</CallToAction>
     title: New Section
