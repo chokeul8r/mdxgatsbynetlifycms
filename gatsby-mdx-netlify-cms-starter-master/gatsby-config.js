@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby-MDX + Netlify-CMS Starter`,
     description: `Starter for Gatsby-MDX + Netlify CMS`,
-    author: `Mark Long`,
+    author: `@renvrant`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,35 +13,19 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `uploads`,
-        path: `${__dirname}/uploads/img`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages`,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: [".mdx", ".md"],
+        extensions: ['.mdx', '.md'],
         defaultLayouts: {
           // This entry template will switch the page template based on
           // a frontmatter value provided in the CMS, allowing users to
           // choose different template layouts.
-          default: require.resolve(
-            `./src/page-templates/cms-entry.template.js`
-          )
+          default: require.resolve(`./src/page-templates/cms-entry.template.js`)
         },
-      },
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
