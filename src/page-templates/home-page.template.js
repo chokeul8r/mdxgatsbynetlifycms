@@ -1,13 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import { Heading, SEO } from "../components"
 import { RenderMarkdown } from "../core"
 import Layout from "../app-layout.component"
-import {
-  safelyGetFrontMatter,
-  // withFallback,
-} from "../cms"
+import { safelyGetFrontMatter } from "../cms"
 
 export const HomePageTemplate = ({
   title,

@@ -28,16 +28,6 @@ collections:
           - { label: Call To Action, name: callToAction, widget: string }
           - { label: Body Text, name: body, widget: markdown }
           - { label: Profile Image, name: profileImage, widget: image }
-          # - {
-          #     label: Sections,
-          #     name: sections,
-          #     widget: list,
-          #     fields:
-          #       [
-          #         { label: Title, name: title, widget: string },
-          #         { label: Body, name: body, widget: markdown },
-          #       ],
-          #   }
       - file: "src/pages/thank-you.md"
         label: "Thank You Page"
         name: "thank-you"
@@ -48,17 +38,10 @@ collections:
               widget: "hidden",
               default: "thank-you-page",
             }
-          - { label: Title, name: title, widget: "string" }
-          - {
-              label: Sections,
-              name: sections,
-              widget: list,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  { label: Body, name: body, widget: markdown },
-                ],
-            }
+          - { label: Title, name: title, widget: string }
+          - { label: Headline, name: headline, widget: string }
+          - { label: Outtro, name: outtro, widget: markdown }
+          - { label: Profile Image, name: profileImage, widget: image }
       - file: "src/pages/config.md"
         label: "Global Settings"
         name: "config"
