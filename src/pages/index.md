@@ -8,5 +8,9 @@ profileImage: /img/ryan1.jpg
 sections:
   - body: Section Text
     title: Section Title
+  - body: >-
+      <CallToAction url="https://google.com" align="center"
+      bgColor="crimson">Holy Crap!</CallToAction>
+    title: Required
 ---
 
