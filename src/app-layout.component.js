@@ -22,15 +22,11 @@ export const AppLayout = ({ children, pageContext }) => (
           <Header siteTitle={data.site.siteMetadata.title} />
           <div className="container">
             <main>{children}</main>
-            <footer>
-              © {new Date().getFullYear()}, Built with
-              {` `}
-              <a href="https://www.gatsbyjs.org">Gatsby</a>
-            </footer>
+            <footer>© {new Date().getFullYear()}</footer>
           </div>
         </>
-      )}
-    }
+      )
+    }}
   />
 )
 
