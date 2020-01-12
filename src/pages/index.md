@@ -21,6 +21,5 @@ sections:
 
       <CallToAction url="https://facebook.com" align="center"
       bgColor="crimson">Another Button</CallToAction>
-    title: New Section
 ---
 
