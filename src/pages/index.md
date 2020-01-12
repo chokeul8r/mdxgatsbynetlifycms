@@ -18,6 +18,9 @@ sections:
       bgColor="seagreen">New Button</CallToAction>
 
        Mauris lectus leo hoodie porta urna commodo keytar sem urna tempus Brooklyn ultricies elementum eros laserdisc commodo ornare metus viral. Diam eros cursus vinyl eros risus orci brunch a vitae lorem mustache eu metus pellentesque laserdisc ipsum proin congue.
+
+      <CallToAction url="https://facebook.com" align="center"
+      bgColor="crimson">Another Button</CallToAction>
     title: New Section
 ---
 
