@@ -7,8 +7,6 @@ subHeadline: Sub-Headline
 profileImage: /img/ryan1.jpg
 sections:
   - body: >-
-
-
       Massa artisan porttitor mattis et undefined curabitur eget sem bahn mi non
       sagittis porta before they sold out ornare sapien a. **Portland tempus
       tempus bibendum Brooklyn lectus auctor cursus vegan donec** sit porttitor
