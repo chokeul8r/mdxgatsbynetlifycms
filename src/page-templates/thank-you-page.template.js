@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Heading, SEO } from "../components"
-import { RenderMarkdown } from "../core"
+// import { RenderMarkdown } from "../core"
 import Layout from "../app-layout.component"
 import { safelyGetFrontMatter } from "../cms"
 
@@ -15,7 +15,7 @@ export const ThankYouPageTemplate = ({
     <SEO title={title} />
     <Heading tag={1}>{title}</Heading>
     <h1>{headline}</h1>
-    <RenderMarkdown md={outtro} />
+    {/* <RenderMarkdown md={outtro} /> */}
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <img src={profileImage} alt="Thank You" />
     </div>

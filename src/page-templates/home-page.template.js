@@ -24,7 +24,7 @@ export const HomePageTemplate = ({
     <h1>{headline}</h1>
     <h2>{subHeadline}</h2>
     <p>{introduction}</p>
-    <RenderMarkdown md={body} />
+    <RenderMarkdown md={ body } />
     <div>
       <button>{callToAction}</button>
     </div>
