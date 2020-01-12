@@ -27,10 +27,20 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Headline, name: headline, widget: string }
           - { label: Sub-Headline, name: subHeadline, widget: string }
-          - { label: Introduction, name: introduction, widget: string }
-          - { label: Call To Action, name: callToAction, widget: string }
-          - { label: Body Text, name: body, widget: markdown }
           - { label: Profile Image, name: profileImage, widget: image }
+          - {
+              label: Sections,
+              name: sections,
+              widget: list,
+              fields:
+                [
+                { label: Title, name: title, widget: string },
+                { label: Body, name: body, widget: markdown },
+                ]
+            }
+          # - { label: Introduction, name: introduction, widget: string }
+          # - { label: Body Text, name: body, widget: markdown }
+          # - { label: Call To Action, name: callToAction, widget: string }
       - file: "src/pages/thank-you.md"
         label: "Thank You Page"
         name: "thank-you"

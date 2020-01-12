@@ -1,16 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Heading, SEO } from "../components"
-// import { RenderMarkdown } from "../core"
-import { safelyGetFrontMatter } from "../cms"
+import { RenderMarkdown } from "../core"
+import { safelyGetFrontMatter, withFallback } from "../cms"
 
 export const HomePageTemplate = ({
   title,
+  sections,
   featuredImage,
   headline,
   subHeadline,
-  introduction,
-  callToAction,
   profileImage,
 }) => {
   return (
@@ -22,13 +21,16 @@ export const HomePageTemplate = ({
       </div>
       <h1>{headline}</h1>
       <h2>{subHeadline}</h2>
-      <p>{introduction}</p>
-      
-        {/* <RenderMarkdown md={body} /> */}
-      
-      <div>
-        <button>{callToAction}</button>
-      </div>
+      {withFallback(sections, []).map((section, i) => {
+        return (
+          <section key={i}>
+            <h2>{section.title}</h2>
+            <RenderMarkdown md={section.body} />
+            <hr />
+          </section>
+        )
+      })}
+
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <img src={profileImage} alt="Ryan" />
       </div>
