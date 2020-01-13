@@ -12,7 +12,7 @@ CMS.registerPreviewTemplate("thank-you", ThankYouPagePreview)
 
 // Extend editor
 CMS.registerEditorComponent(ctaEditorConfig)
-CMS.registerWidget([NetlifyCmsWidgetFontpicker.Widget()])
+// CMS.registerWidget([NetlifyCmsWidgetFontpicker.Widget()])
 // CMS.registerWidget("color", ColorWidget.Control)
 // CMS.registerWidget(
 //   "fontawesome",
