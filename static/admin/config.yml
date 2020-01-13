@@ -77,6 +77,6 @@ collections:
             }
           - { label: Site Title, name: title, widget: "string" }
           - { label: Site Description, name: desc, widget: "string" }
-          - { label: Google Fonts, name: fonts, widget: fontpicker }
-          - { label: Color Widget, name: colors, widget: color }
-          - { label: Font Awesome, name: fontawesome, widget: fontawesome-solid }
+          # - { label: Google Fonts, name: fonts, widget: fontpicker }
+          # - { label: Color Widget, name: colors, widget: color }
+          # - { label: Font Awesome, name: fontawesome, widget: fontawesome-solid }
