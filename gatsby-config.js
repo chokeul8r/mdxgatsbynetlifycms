@@ -39,7 +39,7 @@ module.exports = {
           // choose different template layouts.
           default: require.resolve(
             `./src/page-templates/cms-entry.template.js`
-          )
+          ),
         },
       },
     },

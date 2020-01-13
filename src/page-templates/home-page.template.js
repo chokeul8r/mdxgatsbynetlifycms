@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { Heading, SEO } from "../components"
 import { RenderMarkdown } from "../core"
 import { safelyGetFrontMatter, withFallback } from "../cms"
+import ModalPopUp from "../components/modal"
 
 export const HomePageTemplate = ({
   title,
@@ -21,6 +22,7 @@ export const HomePageTemplate = ({
       </div>
       <h1>{headline}</h1>
       <h2>{subHeadline}</h2>
+      <ModalPopUp />
       {withFallback(sections, []).map((section, i) => {
         return (
           <section key={i}>

@@ -67,5 +67,5 @@ collections:
           - { label: Site Description, name: desc, widget: "string" }
           - { label: Heading Fonts, name: headingfonts, widget: fontpicker }
           - { label: Body Fonts, name: bodyfonts, widget: fontpicker }
-          # - { label: Color Widget, name: colors, widget: color }
-          # - { label: Font Awesome, name: fontawesome, widget: fontawesome-solid }
+          
+          
