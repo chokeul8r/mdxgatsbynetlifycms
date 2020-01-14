@@ -5,6 +5,16 @@ import { RenderMarkdown } from "../core"
 import { safelyGetFrontMatter, withFallback } from "../cms"
 import ModalPopUp from "../components/modal"
 import { Container, Row, Col, Jumbotron, Image } from "react-bootstrap"
+import styled from "styled-components"
+
+const StyledImage = styled(Image)`
+ max-width: 300px;
+ height: auto;
+`
+const StyledJumbotron = styled(Jumbotron)`
+  height: 94vh;
+  width: 100vw;
+`
 
 export const HomePageTemplate = ({
   title,
@@ -20,12 +30,12 @@ export const HomePageTemplate = ({
       {/* <div style={{ maxWidth: `1500px`, marginBottom: `1.45rem` }}>
       <img src={featuredImage} alt="background" />
     </div> */}
-      <Jumbotron className="bg-secondary m-0">
+      <StyledJumbotron className="bg-secondary m-0">
         <Container className="mt-5 mb-4 ">
           <Row>
             <Col sm={12} lg={6} className="px-1">
               <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-                <Image src={profileImage} alt="placeholder" roundedCircle  />
+                <StyledImage src={profileImage} alt="placeholder" roundedCircle  />
               </div>
             </Col>
             <Col sm={12} lg={6} className="px-1">
@@ -43,7 +53,7 @@ export const HomePageTemplate = ({
             <Link to="/thank-you/">Go to the Thank You Page</Link>
           </Row>
         </Container>
-      </Jumbotron>
+      </StyledJumbotron>
     </>
   )
 }
