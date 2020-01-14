@@ -2,8 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import { Header } from "./components"
-
 // Global application wrapper
 export const AppLayout = ({ children, pageContext }) => (
   <StaticQuery
@@ -19,11 +17,13 @@ export const AppLayout = ({ children, pageContext }) => (
     render={data => {
       return (
         <>
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <div className="container">
-            <main>{children}</main>
-            <footer>© {new Date().getFullYear()}</footer>
-          </div>
+          <main>{children}</main>
+          <footer className="bg-dark pt-3 pb-3">
+                  <div className="container text-white text-center">
+              {data.site.siteMetadata.title} © All Rights Reserved{" "}
+              {new Date().getFullYear()}
+            </div>
+          </footer>
         </>
       )
     }}
