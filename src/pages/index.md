@@ -4,7 +4,7 @@ featuredImage: /img/ryan2.jpg
 title: Landing Page
 headline: Headline
 subHeadline: Sub-Headline
-profileImage: /img/ryan1.jpg
+profileImage: /img/female-placeholder.jpg
 sections:
   - body: >-
       Massa artisan porttitor mattis et undefined curabitur eget sem bahn mi non
