@@ -1,6 +1,5 @@
 ---
 templateKey: home-page
-backgroundImage: /img/ryan2.jpg
 title: Landing Page
 headline: Headline
 subHeadline: Sub-Headline
