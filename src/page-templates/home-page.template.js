@@ -8,7 +8,7 @@ import { Container, Row, Col, Jumbotron, Image } from "react-bootstrap"
 import styled from "styled-components"
 
 const StyledImage = styled(Image)`
- max-width: 300px;
+ max-width: 350px;
  height: auto;
 `
 const StyledJumbotron = styled(Jumbotron)`
