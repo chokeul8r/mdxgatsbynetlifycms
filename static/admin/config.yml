@@ -23,18 +23,24 @@ collections:
               widget: "hidden",
               default: "home-page",
             }
-          - { label: Featured Image, name: featuredImage, widget: image }
+          - {
+              label: Background Image,
+              name: backgroundImage,
+              widget: image,
+              required: false,
+            }
           - { label: Title, name: title, widget: string }
           - { label: Headline, name: headline, widget: string }
           - { label: Sub-Headline, name: subHeadline, widget: string }
           - { label: Profile Image, name: profileImage, widget: image }
-          - { label: Sections, name: sections, widget: list, fields: [
-                  # { label: Title, name: title, widget: string },
-                  { label: Body, name: body, widget: markdown },
-                ] }
-          # - { label: Introduction, name: introduction, widget: string }
-          # - { label: Body Text, name: body, widget: markdown }
-          # - { label: Call To Action, name: callToAction, widget: string }
+          - { label: Call To Action, name: cta, widget: string }
+          - { label: Modal Submit Button, name: submit, widget: string }
+          - {
+              label: Sections,
+              name: sections,
+              widget: list,
+              fields: [{ label: Body, name: body, widget: markdown }],
+            }
       - file: "src/pages/thank-you.md"
         label: "Thank You Page"
         name: "thank-you"
@@ -48,11 +54,12 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Headline, name: headline, widget: string }
           - { label: Profile Image, name: profileImage, widget: image }
-          - { label: Sections, name: sections, widget: list, fields: [
-                  # { label: Title, name: title, widget: string },
-                  { label: Body, name: body, widget: markdown },
-                ] }
-          # - { label: Outtro, name: body, widget: markdown }
+          - {
+              label: Sections,
+              name: sections,
+              widget: list,
+              fields: [{ label: Body, name: body, widget: markdown }],
+            }
       - file: "src/pages/config.md"
         label: "Global Settings"
         name: "config"
@@ -67,5 +74,3 @@ collections:
           - { label: Site Description, name: desc, widget: "string" }
           - { label: Heading Fonts, name: headingfonts, widget: fontpicker }
           - { label: Body Fonts, name: bodyfonts, widget: fontpicker }
-          
-          

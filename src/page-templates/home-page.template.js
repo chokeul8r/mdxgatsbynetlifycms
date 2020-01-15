@@ -15,7 +15,7 @@ const StyledImage = styled(Image)`
 export const HomePageTemplate = ({
   title,
   sections,
-  featuredImage,
+  backgroundImage,
   headline,
   subHeadline,
   profileImage,
@@ -24,7 +24,7 @@ export const HomePageTemplate = ({
     <>
       <SEO title={title} />
       {/* <div style={{ maxWidth: `1500px`, marginBottom: `1.45rem` }}>
-      <img src={featuredImage} alt="background" />
+      <img src={backgroundImage} alt="background" />
     </div> */}
       <Jumbotron fluid>
         <Container className="my-3 py-2">
