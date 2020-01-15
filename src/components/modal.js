@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Modal, Button } from "react-bootstrap"
+import { Modal, Button, Form } from "react-bootstrap"
 
 const ModalPopUp = props => {
   const [show, setShow] = useState(false)
@@ -9,11 +9,18 @@ const ModalPopUp = props => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Call To Action
-      </Button>
-
+      <div className="d-flex justify-content-center">
+        <Button
+          className="w-100 zoomer"
+          variant="primary"
+          size="lg"
+          onClick={handleShow}
+        >
+          Call To Action
+        </Button>
+      </div>
       <Modal
+        // className="bg-primary"
         show={show}
         onHide={handleClose}
         {...props}
@@ -21,13 +28,24 @@ const ModalPopUp = props => {
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+        <Modal.Header className="bg-primary" closeButton>
+          <Modal.Title className="text-white">Modal heading</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="danger" onClick={handleClose}>
-            Close
+        <Modal.Body className="bg-primary">
+          <Form>
+            <Form.Group controlId="formGroupPassword">
+              <Form.Label className="text-white">Name</Form.Label>
+              <Form.Control type="name" placeholder="Name" />
+            </Form.Group>
+            <Form.Group controlId="formGroupEmail">
+              <Form.Label className="text-white">Email address</Form.Label>
+              <Form.Control type="email" placeholder="Enter email" />
+            </Form.Group>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer className="bg-primary">
+          <Button className="bg-light text-dark" variant="secondary" onClick={handleClose}>
+            Submit
           </Button>
         </Modal.Footer>
       </Modal>
