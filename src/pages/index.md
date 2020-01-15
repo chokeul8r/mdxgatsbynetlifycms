@@ -1,10 +1,11 @@
 ---
 templateKey: home-page
-featuredImage: /img/ryan2.jpg
 title: Landing Page
 headline: Headline
 subHeadline: Sub-Headline
 profileImage: /img/female-placeholder.jpg
+cta: Call To Action
+submit: Submit
 sections:
   - body: >-
       Massa artisan porttitor mattis et undefined curabitur eget sem bahn mi non
