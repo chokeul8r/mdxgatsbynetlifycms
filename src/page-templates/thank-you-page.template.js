@@ -20,7 +20,7 @@ export const ThankYouPageTemplate = ({
   <>
     <SEO title={title} />
     <Jumbotron className="bg-primary">
-      <div className="d-flex justify-content-center text-white slideRight">
+      <div className="d-flex justify-content-center text-white zoomer">
         <h1 className="text-white">{title}</h1>
       </div>
     </Jumbotron>
